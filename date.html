@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>We will now learn using new Date() method </p>
+    <p id = "newdate"></p>
+
+    <p>We will now learn using new toDateString() method </p>
+    <p id = "todatestring"></p>
+
+    <p>We will now learn using new toUTCString() method to convert a date to a string</p>
+    <p id = "toutc"></p>
+
+    <p>We will now learn using new toISOString() method to convert a date to a string</p>
+    <p id = "toisos"></p>
+
+    <p>We will now use the basic toString() method to conver a date to a string </p>
+    <p id = "tostrings"></p>
+
+  
+
+    <script>
+
+        const l = new Date();
+        document.getElementById("newdate").innerHTML = l;
+
+        const m = new Date();
+        document.getElementById("todatestring").innerHTML = m.toDateString();
+
+        const n = new Date();
+        document.getElementById("toutc").innerHTML = n.toUTCString();
+
+        const o = new Date();
+        document.getElementById("toisos").innerHTML = o.toISOString();
+
+    </script>
+
+
+
+
+</body>
+</html>

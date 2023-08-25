@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1.2P</title>
+</head>
+
+<body>
+
+    <h1>JavaScript Strings</h1>
+
+     Write your comments here --
+    <p>The length of the string is:</p>
+    <p id="demo"></p>
+    <p> The string aditya in Upper Case is -</p>
+    <p id="name"></p>
+    <p>The string BHAVINI in Lower Case is - </p>
+    <p id="NAME"></p>
+    <p>Lets display the character at - </p>
+    <p id = "at"></p>
+    <p>numbers with and without decimals - </p>
+    <p id = "decimal"></p>
+    <p>numbers with exponenet notation - </p>
+    <p id = "exponent"></p>
+    <p>numbers without a period or exponenet notation are correct - </p>
+    <p id = "noexponent"></p>
+    <p>Many times the floating point arithmetic is incorrect. an example is  - </p>
+    <p id = "floating"></p>
+    <p>Whenever two numbers are added, the result is always a number. an example is   - </p>
+    <p id = "addition"></p>
+    <p>The length of any array is returned by the length property. an example is -    - </p>
+    <p id = "length"></p>
+    <p>To get the array as a retuern separated with commas, we use the toString() method. an example is -    - </p>
+    <p id = "toString"></p>
+    <p>We will now find elements through their indexes </p>
+    <p id = "index"></p>
+    <p>We will now learn using the upshift() method </p>
+    <p id = "up"></p>
+    <p id = "shift"></p>
+    <p>We will now learn using the shift() method </p>
+    <p id = "shiftt"></p>
+    <p id = "shiftttt"></p>
+    
+
+
+    <script>
+        let text = "deakinuniversitygeelongwaterfrontwaurnpondscampus";
+        document.getElementById("demo").innerHTML = text.length;
+
+        let word = "aditya";
+        document.getElementById("name").innerHTML = word.toUpperCase();
+
+        let wordd = "BHAVINI";
+        document.getElementById("NAME").innerHTML = wordd.toLowerCase();
+        
+        let char = "BHAVINI";
+        document.getElementById("at").innerHTML = char.charAt(4);
+
+        // number methods
+    
+        let x = 4.4;
+        let y = 44;
+        document.getElementById("decimal").innerHTML =  x + "<br>" + y;
+
+        let a = 36e5;;
+        let c = 36e-5;
+        document.getElementById("exponent").innerHTML = x + "<br>" + y;
+        
+        let e = 872536721647890;
+        let f = 872536748317345;
+        document.getElementById("noexponent").innerHTML = x + "<br>" + y;
+        
+        let g = 3.61 + 6.03;
+        document.getElementById("floating").innerHTML = "3.6 + 6.3 = " + g;
+
+        let h = 60;
+        let i = 40;
+        let j = h + i;
+        document.getElementById("addition").innerHTML = j;
+        
+        // arrays
+       
+        const shoes = ["Nike", "Adidas", "New Balance"]
+        let measure = shoes.length;
+        document.getElementById("length").innerHTML = measure;
+
+        const colours = ["Pink", "Blue", "Beige"]
+        document.getElementById("toString").innerHTML = colours.toString();
+
+        const friends = ["Aditya", "Bef", "Kobe"];
+
+        document.getElementById("index").innerHTML = "The tallest in all the friends is: " +  friends[0];
+
+
+        const sports = ["Cricket", "Footy", "Hockey"];
+        document.getElementById("up").innerHTML = sports;
+        sports.unshift("Basketball");
+        document.getElementById("shift").innerHTML = sports;
+
+        const cartoon = ["Doraemon", "Oggy", "Ninja"];
+        document.getElementById("shiftt").innerHTML = cartoon.shift();
+        document.getElementById("shifttt").innerHTML = cartoon
+        
+        
+       
+
+
+    </script>
+
+
+</body>
+
+</html>
